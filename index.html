@@ -103,7 +103,8 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   .claim li:nth-child(5) .ck, .claim li:nth-child(5) .ck::after { animation-delay: 1.4s; }
   .claim li:nth-child(6) .ck, .claim li:nth-child(6) .ck::after { animation-delay: 1.75s; }
   .claim li:nth-child(7) .ck, .claim li:nth-child(7) .ck::after { animation-delay: 2.1s; }
-  .claim .paid { animation: pop 6s infinite; animation-delay: 2.45s; }
+  .claim li:nth-child(8) .ck, .claim li:nth-child(8) .ck::after { animation-delay: 2.45s; }
+  .claim .paid { animation: pop 6s infinite; animation-delay: 2.8s; }
   @keyframes fill { 0%, 4% { transform: scale(0); } 8%, 88% { transform: scale(1); } 96%, 100% { transform: scale(0); } }
   @keyframes ring { 0%, 4% { border-color: var(--dim); } 8%, 88% { border-color: var(--ok); } 96%, 100% { border-color: var(--dim); } }
   @keyframes pop { 0% { transform: scale(.9); } 6% { transform: scale(1.08); } 12%, 100% { transform: scale(1); } }
@@ -271,6 +272,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
               <li><span class="ck"></span><span>Drug utilization review</span><span class="tag">DUR</span></li>
               <li><span class="ck"></span><span>Coordination of benefits</span><span class="tag">COB</span></li>
               <li><span class="ck"></span><span>Pricing &amp; pharmacy network</span><span class="tag">COST</span></li>
+              <li><span class="ck"></span><span>Compound claim ingredients</span><span class="tag">CMPD</span></li>
               <li><span class="ck"></span><span>Fraud rules &amp; anomaly check</span><span class="tag">FWA</span></li>
               <li><span class="ck"></span><span>Accumulators updated</span><span class="tag">DED</span></li>
             </ol>
@@ -357,7 +359,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
             <div><h3>Cloud claim adjudication platform</h3><p class="sub">The system that decides in real time whether a claim pays, at what price, under which plan rules.</p></div>
             <div class="tldr">
               <div><span class="l">Problem</span><p>Members on Commercial, Medicaid and Exchange plans needed reliable access to retail, mail order and specialty pharmacies, on a platform that could take on new claim sources.</p></div>
-              <div><span class="l">What I did</span><p>Led developers, analysts, integration engineers and SDETs. Shipped DUR, COB, step therapy, transition of care, lock-in/lock-out, Medicare plan adjudication, Nx and FIR. Integrated GoodRx and other discount platforms, and set up the KPIs the team ran on.</p></div>
+              <div><span class="l">What I did</span><p>Led developers, analysts, integration engineers and SDETs. Shipped DUR, COB, compound claims adjudication, step therapy, transition of care, lock-in/lock-out, Medicare plan adjudication, Nx and FIR. Integrated GoodRx and other discount platforms, and set up the KPIs the team ran on.</p></div>
             </div>
             <div class="result"><b>+30%</b><span>growth in claim volume from the discount platform integrations, with milestones held on schedule.</span></div>
           </div>
@@ -432,7 +434,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
     <div class="wrap">
       <div class="head"><div><p class="eyebrow">Toolkit</p><h2>Domain and skills</h2></div></div>
       <div class="skills">
-        <div><h3>Pharmacy domain</h3><div class="chips"><span>Claims adjudication</span><span>NCPDP D.0 &amp; F6</span><span>Eligibility</span><span>COB</span><span>DUR</span><span>Prior authorization</span><span>Step therapy</span><span>Transition of care</span><span>Pricing &amp; networks</span><span>Medicare</span><span>Medicaid</span><span>Commercial &amp; Exchange</span><span>Fraud, waste &amp; abuse</span></div></div>
+        <div><h3>Pharmacy domain</h3><div class="chips"><span>Claims adjudication</span><span>NCPDP D.0 &amp; F6</span><span>Eligibility</span><span>COB</span><span>DUR</span><span>Prior authorization</span><span>Step therapy</span><span>Transition of care</span><span>Pricing &amp; networks</span><span>Compound claims</span><span>Medicare</span><span>Medicaid</span><span>Commercial &amp; Exchange</span><span>Fraud, waste &amp; abuse</span></div></div>
         <div><h3>Product &amp; delivery</h3><div class="chips"><span>Strategy &amp; roadmaps</span><span>Requirements &amp; stories</span><span>Plan certification</span><span>KPI frameworks</span><span>A/B testing</span><span>Platform migration</span><span>Stakeholder management</span><span>Agile Scrum</span><span>Mentoring</span></div></div>
         <div><h3>Technical &amp; AI</h3><div class="chips"><span>SQL</span><span>Python</span><span>APIs &amp; microservices</span><span>AWS</span><span>Azure</span><span>Couchbase</span><span>Postman</span><span>DataDog</span><span>Tableau</span><span>QuickSight</span><span>Generative AI</span><span>Agentic AI</span><span>ML integration</span></div></div>
       </div>
